@@ -12,6 +12,9 @@
     <color name="grey_10">#e6e6e6</color>
     <color name="grey_80">#37474F</color>
     <color name="grey_90">#263238</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentDark">#F50057</color>
+    <color name="colorAccentLight">#FF80AB</color>
 
 
 </resources>

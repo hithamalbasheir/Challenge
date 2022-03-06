@@ -1,5 +1,6 @@
 package com.example.challenge.presentation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity(),RecyclerAdapter.MyViewHolder.OnClickLis
     }
 
     override fun onItemClicked(item: Items) {
-        Toast.makeText(this, "working....", Toast.LENGTH_SHORT).show()
+        if (!item.locked){
+            val intent = Intent(this, ControlList::class.java)
+            intent.putExtra("item",item)
+            startActivity(intent)
+        }
     }
 }
