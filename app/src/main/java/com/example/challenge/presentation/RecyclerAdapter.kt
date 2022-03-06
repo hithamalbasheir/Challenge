@@ -12,13 +12,7 @@ import com.example.challenge.domain.model.Items
 
 
 class RecyclerAdapter(private val context: Context,private val onClickListener: MyViewHolder.OnClickListener) : RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>() {
-    private var itemsList = mutableListOf<Items>(
-        Items("item 1", false),
-        Items("item 2",true),
-        Items("item 3",true),
-        Items("item 4",true),
-        Items("item 5",true)
-    )
+    private var itemsList = mutableListOf<Items>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         return MyViewHolder(
             ListRowBinding.inflate(
