@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Challenge</string>
+    <string name="title">Item</string>
+    <string name="lockedUnlocked">Locked/Unlocked</string>
 </resources>
